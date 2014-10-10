@@ -1,0 +1,41 @@
+{
+    "debug": false,
+    "lintScripts": false,
+    "preprocessorLocations": [
+        "assets"
+    ],
+    "preprocessorScriptOutput": "assets/scripts",
+    "preprocessorStyleOutput": "assets/css",
+    "projectName": "Bootstrap+Blog",
+    "projectDescription": "A Simple Bootstrap implementation with a Blog.",
+    "publishedId": null,
+    "serverHostname": null,
+    "serverPort": null,
+    "templateDirectory": "templates",
+    "templateDefaultLayout": "layout",
+    "templateDefaultPage": "index",
+    "type": "mixture",
+    "useCompass": false,
+    "simpleModePartnerServer": null,
+    "modelSource": null,
+    "domain": null,
+    "convertHtml": {
+        "relativePaths": false
+    },
+    "followLeader": true,
+    "routes": [
+        {
+            "route": "page-:page",
+            "template": "index",
+            "redirect": null
+        },
+        {
+            "route": "tag/:tag",
+            "template": "index",
+            "redirect": null
+        }
+    ],
+    "customRubyPath": null,
+    "remoteDebugPort": 0,
+    "optimiseImages": true
+}

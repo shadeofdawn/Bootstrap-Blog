@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+		<head>
+				<meta name="HandheldFriendly" content="True">
+				<meta name="MobileOptimized" content="320">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="alternate" type="application/rss+xml" href="/rss" title="RSS Feed">
+				<title>{% block title %}{{ global.title }}{% endblock %}</title>
+				{{ "bootstrap.css" | asset_url | stylesheet_tag }}
+				{{ "blog.css" | asset_url | stylesheet_tag }}
+		</head>
+		<body>
+			<div class="wrapper">
+				<!-- Include -->
+				{% include "navigation" %}
+				<div class="container">
+					<div class="article">
+						{% block content %}{% endblock %}
+					</div>
+						{% include "blog-footer" %}
+				</div>
+			</div>
+		</body>
+</html>
